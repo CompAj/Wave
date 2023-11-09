@@ -2,28 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Register</title>
 </head>
 <body>
-  <h1>Login</h1>
+  <h1>Register</h1>
   <% if (error) { %>
     <p style="color: red;"><%= error %></p>
   <% } %>
-  <!-- login.ejs -->
-<form action="/login" method="post">
+  <form action="/register" method="post">
     <div>
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
     </div>
     <div>
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
     </div>
     <div>
-      <button type="submit">Login</button>
+      <button type="submit">Register</button>
     </div>
-  </form>  
-  <p>Don't have an account? <a href="/register">Register here</a>.</p>
+  </form>
+  <p>Already have an account? <a href="/login">Login here</a>.</p>
 </body>
 </html>
-

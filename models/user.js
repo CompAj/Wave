@@ -1,20 +1,12 @@
-const mongoose = require("mongoose");
-const passportLocal = require("passport-local-mongoose");
+const mongoose = require('mongoose');
+const passportLocalMongoose = require('passport-local-mongoose');
 
-mongoose.connect("mongodb://localhost/wave", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+const UserSchema = new mongoose.Schema({
+  username: { type: String, unique: true, required: true },
+  email: { type: String, unique: true, required: true },
+  password: String,
 });
 
+UserSchema.plugin(passportLocalMongoose, { usernameField: 'email' });
 
-const userSchema = new mongoose.Schema({
-    username: String,
-    password: String,
-    movies: [{type: String}]
-});
-
-userSchema.plugin(passportLocal);
-const User = mongoose.model("User", userSchema);
-
-module.exports = User;
-
+module.exports = mongoose.model('User', UserSchema);

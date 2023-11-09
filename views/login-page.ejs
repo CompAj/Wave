@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <head>
+        <link rel="icon" type="image/png" href="Images/IMG_1906.png"/>
+        <link rel="stylesheet" href="home-page.css">
+        <link rel="stylesheet" href="general.css"> 
+        <link rel="stylesheet" href="nav-bar.css">
+
+        <title>
+            Wave
+        </title>
+    </head>
+
+    <body>
+        <header>
+            <h2 class="logo">
+                Wave
+            </h2>
+
+            <nav class="navigation">
+
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>
+                    Welcome
+                </h2>
+                <form action="/login" method="post">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="text" id="username" name="username" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" id="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remeber me <a href="#"></a></label>
+                        <a href="#">Forgot Password</a>
+                    </div>
+                    <button type="submit" class="btn"> Login</button>
+                    <div class="login-register">
+                        <p>Dont have an account? <a href="/" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+
+            <div class="form-box register">
+                <h2>
+                    Greetings
+                </h2>
+                <form action="/register" method="post">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" id="username" name="username" required>
+                        <label>Username</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" id="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" id="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms and services<a href="#"></a></label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="/" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="/js/script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
