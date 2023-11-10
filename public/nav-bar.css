@@ -23,7 +23,7 @@ header{
     font-size: 1.1em;
     color: #fff;
     text-decoration: none;
-    margin: 0 35px;
+    margin-left: 10px;
 }
 
 .navigation a::after{
